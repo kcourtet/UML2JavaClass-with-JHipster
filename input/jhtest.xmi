@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><uml:Model xmlns:uml="http://www.omg.org/spec/UML/20110701" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="_4t0qYCdnEeimB-tIheQRfA" name="jhtest">
+  <eAnnotations xmi:id="_4t0qYSdnEeimB-tIheQRfA" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_4t0qYidnEeimB-tIheQRfA" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t0qYydnEeimB-tIheQRfA" value="3.0.0"/>
+    </contents>
+    <contents xmi:type="uml:Property" xmi:id="_4t0qZCdnEeimB-tIheQRfA" name="isRoundTrip"/>
+    <contents xmi:type="uml:Property" xmi:id="_4t0qZSdnEeimB-tIheQRfA" name="Visibility">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t0qZidnEeimB-tIheQRfA" value="0"/>
+    </contents>
+  </eAnnotations>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_4t0qZydnEeimB-tIheQRfA" name="required" constrainedElement="_4t2flCdnEeimB-tIheQRfA">
+    <specification xmi:type="uml:LiteralString" xmi:id="_4t0qaCdnEeimB-tIheQRfA" value=""/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_4t0qaSdnEeimB-tIheQRfA" name="required" constrainedElement="_4t2fnidnEeimB-tIheQRfA">
+    <specification xmi:type="uml:LiteralString" xmi:id="_4t0qaidnEeimB-tIheQRfA" value=""/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_4t0qaydnEeimB-tIheQRfA" name="required" constrainedElement="_4t2fpCdnEeimB-tIheQRfA">
+    <specification xmi:type="uml:LiteralString" xmi:id="_4t0qbCdnEeimB-tIheQRfA" value=""/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_4t0qbSdnEeimB-tIheQRfA" name="required" constrainedElement="_4t2fqidnEeimB-tIheQRfA">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4t0qbidnEeimB-tIheQRfA">
+      <eAnnotations xmi:id="_4t0qbydnEeimB-tIheQRfA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_4t0qcCdnEeimB-tIheQRfA" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t0qcSdnEeimB-tIheQRfA" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body>&lt;Enter note text here&gt;</body>
+    </ownedComment>
+    <specification xmi:type="uml:LiteralString" xmi:id="_4t0qcidnEeimB-tIheQRfA" value=""/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_4t0qcydnEeimB-tIheQRfA" name="required" constrainedElement="_4t2fsCdnEeimB-tIheQRfA">
+    <specification xmi:type="uml:LiteralString" xmi:id="_4t1RcCdnEeimB-tIheQRfA" value=""/>
+  </ownedRule>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4t2fkCdnEeimB-tIheQRfA" name="AnalyseData">
+    <eAnnotations xmi:id="_4t2fkSdnEeimB-tIheQRfA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_4t2fkidnEeimB-tIheQRfA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2fkydnEeimB-tIheQRfA" value="0"/>
+      </contents>
+    </eAnnotations>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4t2flCdnEeimB-tIheQRfA" name="DateManip" visibility="private" type="_4t2ftidnEeimB-tIheQRfA" isUnique="false">
+      <eAnnotations xmi:id="_4t2flSdnEeimB-tIheQRfA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_4t2flidnEeimB-tIheQRfA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2flydnEeimB-tIheQRfA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_4t2fmCdnEeimB-tIheQRfA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2fmSdnEeimB-tIheQRfA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4t2fmidnEeimB-tIheQRfA">
+        <eAnnotations xmi:id="_4t2fmydnEeimB-tIheQRfA" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_4t2fnCdnEeimB-tIheQRfA" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2fnSdnEeimB-tIheQRfA" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4t2fnidnEeimB-tIheQRfA" name="Operateurs" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_4t2fnydnEeimB-tIheQRfA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_4t2foCdnEeimB-tIheQRfA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2foSdnEeimB-tIheQRfA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_4t2foidnEeimB-tIheQRfA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2foydnEeimB-tIheQRfA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4t2fpCdnEeimB-tIheQRfA" name="Appareil" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_4t2fpSdnEeimB-tIheQRfA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_4t2fpidnEeimB-tIheQRfA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2fpydnEeimB-tIheQRfA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_4t2fqCdnEeimB-tIheQRfA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2fqSdnEeimB-tIheQRfA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4t2fqidnEeimB-tIheQRfA" name="ProdCrit" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_4t2fqydnEeimB-tIheQRfA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_4t2frCdnEeimB-tIheQRfA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2frSdnEeimB-tIheQRfA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_4t2fridnEeimB-tIheQRfA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2frydnEeimB-tIheQRfA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4t2fsCdnEeimB-tIheQRfA" name="MOL" visibility="private" isUnique="false">
+      <eAnnotations xmi:id="_4t2fsSdnEeimB-tIheQRfA" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_4t2fsidnEeimB-tIheQRfA" name="Visibility">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2fsydnEeimB-tIheQRfA" value="2"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_4t2ftCdnEeimB-tIheQRfA" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2ftSdnEeimB-tIheQRfA" value="read_write"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_4t2ftidnEeimB-tIheQRfA" name="LocalDate">
+    <eAnnotations xmi:id="_4t2ftydnEeimB-tIheQRfA" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_4t2fuCdnEeimB-tIheQRfA" name="Visibility">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t2fuSdnEeimB-tIheQRfA" value="0"/>
+      </contents>
+      <contents xmi:type="uml:Property" xmi:id="_4t2fuidnEeimB-tIheQRfA" name="isPrimitive"/>
+    </eAnnotations>
+  </packagedElement>
+</uml:Model>

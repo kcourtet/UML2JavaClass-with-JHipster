@@ -1,0 +1,64 @@
+<div>
+    <h2>
+        <span>Basic Analyses</span>
+        <button class="btn btn-primary float-right jh-create-entity create-basic-analysis" [routerLink]="['/', { outlets: { popup: ['basic-analysis-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span >
+            Create new Basic Analysis
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="basicAnalyses">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span>ID</span></th>
+            <th><span>Technology Type</span></th>
+            <th><span>Measure 1</span></th>
+            <th><span>Score</span></th>
+            <th><span>Id</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let basicAnalysis of basicAnalyses ;trackBy: trackId">
+                <td><a [routerLink]="['../basic-analysis', basicAnalysis.id ]">{{basicAnalysis.id}}</a></td>
+                <td>{{basicAnalysis.technologyType}}</td>
+                <td>{{basicAnalysis.measure1}}</td>
+                <td>{{basicAnalysis.score}}</td>
+                <td>{{basicAnalysis.id}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../basic-analysis', basicAnalysis.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'basic-analysis/'+ basicAnalysis.id + '/edit'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'basic-analysis/'+ basicAnalysis.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

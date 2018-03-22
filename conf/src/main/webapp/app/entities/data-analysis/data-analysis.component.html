@@ -1,0 +1,58 @@
+<div>
+    <h2>
+        <span>Data Analyses</span>
+        <button class="btn btn-primary float-right jh-create-entity create-data-analysis" [routerLink]="['/', { outlets: { popup: ['data-analysis-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span >
+            Create new Data Analysis
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="dataAnalyses">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span>ID</span></th>
+            <th><span>Labtype</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let dataAnalysis of dataAnalyses ;trackBy: trackId">
+                <td><a [routerLink]="['../data-analysis', dataAnalysis.id ]">{{dataAnalysis.id}}</a></td>
+                <td>{{dataAnalysis.labtype}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../data-analysis', dataAnalysis.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'data-analysis/'+ dataAnalysis.id + '/edit'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'data-analysis/'+ dataAnalysis.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

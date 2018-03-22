@@ -1,0 +1,48 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myAnimalLabel">Create or edit a Animal</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!animal.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="animal.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" for="field_legacyid">Legacyid</label>
+            <input type="text" class="form-control" name="legacyid" id="field_legacyid"
+                [(ngModel)]="animal.legacyid" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" for="field_species">Species</label>
+            <input type="text" class="form-control" name="species" id="field_species"
+                [(ngModel)]="animal.species" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" for="field_basicAnalysis">Basic Analysis</label>
+            <select class="form-control" id="field_basicAnalysis" name="basicAnalysis" [(ngModel)]="animal.basicAnalysis" required>
+                <option *ngIf="!editForm.value.basicAnalysis" [ngValue]="null" selected></option>
+                <option [ngValue]="basicAnalysisOption.id === animal.basicAnalysis?.id ? animal.basicAnalysis : basicAnalysisOption" *ngFor="let basicAnalysisOption of basicanalyses; trackBy: trackBasicAnalysisById">{{basicAnalysisOption.id}}</option>
+            </select>
+        </div>
+        <div [hidden]="!(editForm.controls.basicAnalysis?.dirty && editForm.controls.basicAnalysis?.invalid)">
+            <small class="form-text text-danger"
+                [hidden]="!editForm.controls.basicAnalysis?.errors?.required">
+                This field is required.
+            </small>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

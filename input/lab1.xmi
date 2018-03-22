@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_K11M8C3cEeiG-8c-9QwNEg" name="lab1">
+  <eAnnotations xmi:id="_K11M8S3cEeiG-8c-9QwNEg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_K11M8i3cEeiG-8c-9QwNEg" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_K11M8y3cEeiG-8c-9QwNEg" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <ownedRule xmi:id="_K11M9C3cEeiG-8c-9QwNEg" constrainedElement="_K11M-i3cEeiG-8c-9QwNEg">
+    <specification xmi:type="uml:LiteralString" xmi:id="_K11M9S3cEeiG-8c-9QwNEg" value="required"/>
+  </ownedRule>
+  <ownedRule xmi:id="_K11M9i3cEeiG-8c-9QwNEg" constrainedElement="_K110AC3cEeiG-8c-9QwNEg">
+    <specification xmi:type="uml:LiteralString" xmi:id="_K11M9y3cEeiG-8c-9QwNEg" value="min=0"/>
+  </ownedRule>
+  <packagedElement xmi:type="uml:Class" xmi:id="_K11M-C3cEeiG-8c-9QwNEg" name="basicAnalysis">
+    <generalization xmi:id="_K11M-S3cEeiG-8c-9QwNEg" general="_K110Ci3cEeiG-8c-9QwNEg"/>
+    <ownedAttribute xmi:id="_K11M-i3cEeiG-8c-9QwNEg" name="technology_type" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_K11M-y3cEeiG-8c-9QwNEg" name="measure1" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_K110AC3cEeiG-8c-9QwNEg" name="score" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_K110AS3cEeiG-8c-9QwNEg" name="id:" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_K110Ai3cEeiG-8c-9QwNEg" name="Animal">
+    <ownedAttribute xmi:id="_K110Ay3cEeiG-8c-9QwNEg" name="basicAnalysis" visibility="public" type="_K11M-C3cEeiG-8c-9QwNEg" aggregation="composite" association="_K110CC3cEeiG-8c-9QwNEg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K110BC3cEeiG-8c-9QwNEg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_K110BS3cEeiG-8c-9QwNEg" name="id" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_K110Bi3cEeiG-8c-9QwNEg" name="legacyid" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_K110By3cEeiG-8c-9QwNEg" name="species" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K110CC3cEeiG-8c-9QwNEg" memberEnd="_K110Ay3cEeiG-8c-9QwNEg _K110CS3cEeiG-8c-9QwNEg">
+    <ownedEnd xmi:id="_K110CS3cEeiG-8c-9QwNEg" visibility="public" type="_K110Ai3cEeiG-8c-9QwNEg" association="_K110CC3cEeiG-8c-9QwNEg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_K110Ci3cEeiG-8c-9QwNEg" name="dataAnalysis">
+    <ownedAttribute xmi:id="_K110Cy3cEeiG-8c-9QwNEg" name="labtype" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>
